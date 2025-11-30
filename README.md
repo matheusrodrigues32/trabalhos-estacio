@@ -1,73 +1,50 @@
+# Jogo War - Estácio
+
 Este projeto implementa uma versão simplificada do jogo War utilizando a linguagem C, trabalhando com:
 
-Structs
+- Structs
+- Ponteiros
+- Alocação dinâmica de memória (malloc e free)
+- Modularização
+- Lógica de ataque entre territórios
+- Sistema de missões
 
-Ponteiros
+## Objetivos do Projeto
 
-Alocação dinâmica de memória (malloc e free)
-
-Modularização
-
-Simulação de ataque entre territórios
-
-Verificação de missões (vitória)
-
-Este trabalho atende aos requisitos das atividades propostas pela Estácio.
-
-🎯 Objetivos do Projeto
-
-✔ Criar um sistema em C para cadastro de territórios usando vetor de structs
-✔ Implementar a lógica de ataque entre territórios usando ponteiros e alocação dinâmica
+✔ Criar um sistema em C para cadastro de territórios usando vetor de structs  
+✔ Implementar a lógica de ataque entre territórios usando ponteiros e alocação dinâmica  
 ✔ Implementar o sistema de missões estratégicas e verificar condições de vitória
 
-🗺️ Territórios Implementados
+## Territórios Implementados
 
-O jogo utiliza 8 territórios:
+O jogo utiliza 6 territórios:
 
-Ásia:
+- Ásia
+- Sibéria
+- China
+- Japão
+- Índia
+- América do Sul
 
-Sibéria
+## Funcionalidade de Ataque
 
-China
+### O ataque funciona da seguinte maneira:
+- Rolagem de dados
+- Comparação entre atacante e defensor
+- Transferência de território em caso de vitória
+- Redução de tropas em caso de derrota
 
-Japão
+## Sistema de Missões
 
-Índia
+### O programa verifica automaticamente se o jogador:
 
-América do Sul:
+✔ Conquistou todos os territórios da Ásia  
+✔ Conquistou todos os territórios da América do Sul
 
-Brasil
+## Como Rodar o Jogo
 
-Argentina
+1. Clone o repositório.
+2. Compile o código utilizando o comando:
 
-Peru
-
-Venezuela
-
-Cada território possui:
-
-Nome
-
-Cor do jogador que controla
-
-Tropas
-
-⚔️ Funcionalidade de Ataque
-
-O ataque funciona através de:
-
-Rolagem de dados (1 a 6)
-
-Comparação entre atacante e defensor
-
-Transferência de território em caso de vitória
-
-Redução de tropas em caso de derrota
-
-🏆 Sistema de Missões
-
-O programa verifica automaticamente se o jogador:
-
-Conquistou toda a Ásia
-
-Conquistou toda a América do Sul
+   ```bash
+   gcc -o war_final war_final.c
